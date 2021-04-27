@@ -60,9 +60,7 @@ fn main() -> ! {
         iprintln!(&mut itm.stim[0],"PA1 reads {}", adc_read_current);
         let current:usize = led_num(adc_read_current);
         
-        // for i in 0..8 {
-        //     leds[i].off();
-        // }
+   
         if current >previous {
             for i in previous..current {
                 leds[i].on();
